@@ -113,7 +113,3 @@ body 영역에 들어가는 태그
 3뒤에 4 블록이 들어갈 수 없고 한층을 다 차지합니다.
 
 # 10 콘텐츠 카테고리
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fc8de496-0135-47f9-9973-b7efef420d37/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/82394784-b315-433a-ba49-8059eb8c5634/Untitled.png)
