@@ -6,9 +6,8 @@ The Learning Record
 
 <details open>
 <summary>2021년 08월</summary>
-<ul> 08월 28일 </ul>
+###### 08월 28일
 [x] HTML 강의 듣기
 - [x] HTML 강의 정리
 
-  <br>
 </details>
