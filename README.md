@@ -25,7 +25,7 @@ The Learning Record
   <ul><li>- [x] 마크다운 공부 </li></ul>
 <br>
   <h4>08월 30일</h4>
-  <ul><li>- [] HTML 강의 정리 </li></ul>
+  <ul><li>- [ ] HTML 강의 정리 </li></ul>
   <ul>
     <li><a href="">구조를 나타내는 요소</a></li>
     <li><a href="">목록과 표</a></li>   
