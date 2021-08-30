@@ -3,7 +3,7 @@
 - 웹 페이지를 구성하고 있는 요소(element) 하나하나를 <strong>'태그'</strong>라는 표기법을 작성
 - 태그를 통해 어떤 요소인지 (제목, 본문, 이미지, 비디오 등) 명시
 
-![태그 설명](./image/whatisHTML1.png)
+![태그 설명](./images/whatisHTML1.png)
 
 > 1.  여는 태그(Opening tag): <요소의 이름>
 > 2.  닫는 태그(Closing tag): </요소의 이름>
@@ -130,6 +130,6 @@ body 영역에 들어가는 태그는 몇 가지 구분으로 나뉠 수 있다.
 | 임베디드 콘텐츠 (Embedded Content)      | 이미지나 비디오 등 외부 소스를 가져오거나 삽입할 때 사용되는 요소                        |
 | 인터랙티브 콘텐츠 (Interactive Content) | 사용자와의 상호작용을 위한 컨텐츠 요소입니다.                                            |
 
-![콘텐츠 카테고리](./image/Content_categories_venn.png)
+![콘텐츠 카테고리](./images/Content_categories_venn.png)
 
 https://developer.mozilla.org/ko/docs/Web/Guide/HTML/Content_categories
