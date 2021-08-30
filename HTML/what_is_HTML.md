@@ -129,3 +129,7 @@ body 영역에 들어가는 태그는 몇 가지 구분으로 나뉠 수 있다.
 | 프레이징 콘텐츠 (Phrasing Content)      | 문단에서 텍스트를 마크업 할 때 사용                                                      |
 | 임베디드 콘텐츠 (Embedded Content)      | 이미지나 비디오 등 외부 소스를 가져오거나 삽입할 때 사용되는 요소                        |
 | 인터랙티브 콘텐츠 (Interactive Content) | 사용자와의 상호작용을 위한 컨텐츠 요소입니다.                                            |
+
+![콘텐츠 카테고리](./image/Content_categories_venn.png)
+
+https://developer.mozilla.org/ko/docs/Web/Guide/HTML/Content_categories
