@@ -32,6 +32,18 @@ HTML `<q>`요소는 둘러싼 텍스트가 짧은 인라인 인용문이라는�
 
 cite 브라우저만 알 수 있고 최종 결과에는 보이지 않습니다.
 
+```html
+<figure>
+  <blockquote cite="https://www.huxley.net/bnw/four.html">
+    <p>
+      Words can be like X-rays, if you use them properly—they’ll go through
+      anything. You read and you’re pierced.
+    </p>
+  </blockquote>
+  <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+</figure>
+```
+
 # 5. 본문- pre
 
 HTML `<pre>` 요소는 미리 서식을 지정한 텍스트를 나타내며, HTML에 작성한 내용 그대로 표현합니다. 텍스트는 보통 **고정폭 글꼴**을 사용해 렌더링하고, 요소 내 공백문자를 그대로 유지합니다.
