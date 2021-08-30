@@ -1,115 +1,131 @@
 # 1. HTML은 어떻게 생겼을까
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/23a86699-0832-4813-a3d5-858ebb107daf/Untitled.png)
+- 웹 페이지를 구성하고 있는 요소(element) 하나하나를 <strong>'태그'</strong>라는 표기법을 작성
+- 태그를 통해 어떤 요소인지 (제목, 본문, 이미지, 비디오 등) 명시
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/689ed045-802d-4990-bef7-c26cf6908add/Untitled.png)
+![태그 설명](./image/whatisHTML1.png)
 
-웹 페이지는 요소들이 나열되어 구성한다.
+> 1.  여는 태그(Opening tag): <요소의 이름>
+> 2.  닫는 태그(Closing tag): </요소의 이름>
+> 3.  내용(Content): 요소의 내용
+> 4.  요소(Element): 여는 태그, 닫는 태그, 내용을 통틀어 요소(element)라고 한다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6b2842a-ce91-4d4a-b3ff-648032ce69d9/Untitled.png)
-
-코드를 읽을 때 가독성을 위해 될수있으면 모두 소문자로 쓰기.
+웹 페이지는 요소들이 나열되어 구성합니다. 코드를 읽을 때 가독성을 위해 될 수 있으면 태그는 모두 **소문자**로 쓰는 것을 권장합니다.
 
 # 2. 빈 요소
 
-HTML은 각각 요소들이 나열되어 있는 형태고 그 요소들은 태그로 구성되어 있습니다.
+HTML은 각각 요소들이 나열되어 있는 형태고 그 요소들은 태그로 구성되어 있습니다. 내용이 없는 요소를 빈 요소라 부르고 이 경우 닫는 태그를 추가로 명시하지 않아도 됩니다. 빈 요소로 쓸 수 있는 태그들은 웹 표준에 정해져있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/525b0b7c-75d5-41a5-bfa5-d590af8d6d16/Untitled.png)
+✨ **예시**
 
-빈 요소로 쓸 수 있는 태그들은 웹 표준에 정해져있다.
+```html
+<br />
+<hr />
+<img src="http://image.url/images/1.jpg" />
+<meta charset="utf-8" />
+<input type="text" name="name" />
+```
 
 # 3. 요소의 중첩
 
-태그 아에 text 뿐 아니라 다른 요소를 넣을 수 있다.
+태그 안에 text뿐 아니라 다른 요소를 넣어 **포함관계**를 성립할 수 있습니다. 여러 요소가 중첩될 경우에는 열린 순서의 **반대**로 닫혀야만 합니다. 서로의 포함관계(부자관계)를 구분하기 위하여 **들여쓰기**를 사용합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/daa69327-8458-4908-b5e5-ec40f44e0129/Untitled.png)
+✨ **예시**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/46a4ded6-bb8c-4f6c-bbaf-bf512aea142f/Untitled.png)
+```html
+<ul>
+  <li>하나</li>
+  <li>둘</li>
+  <li>셋</li>
+</ul>
+```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d1a57236-9f8c-4814-91f8-96d3cbbca871/Untitled.png)
-
-HTML 문법으로는 들여쓰기가 필요없지만, 가독성을 위해 들여쓰기를 쓴다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/adc9e725-f91e-4e4c-a840-3c1d65b56bff/Untitled.png)
-
-부모 태그 안에 자식태그가 쏙 들어가있어야 한다. 자식 태그가 다 닫히고 부모태그가 닫히는 형태
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c18b2476-6c1c-4fb8-83fd-8aaf138121b4/Untitled.png)
-
-내용으로 두가지가 들어갈 수 있는데 첫번째는 태그이고 두번째는 다른 요소입니다.
+HTML문법상 들여쓰기가 필요하진 않지만, 가독성을 위해 들여쓰기를 씁니다.
+내용으로 두 가지가 될 수 있는데 첫번째는 태그이고 두번째는 다른 요소입니다.
 
 # 4. 주석
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ef690fa9-0591-493f-a77a-c7fd920240b6/Untitled.png)
+코드에 메모를 추가하거나, 혹은 사용하지 않는 코드를 임시로 처리하기 위함입니다.
 
 # 5. HTML 문서의 구조
 
-이제부터 실제로 쓰이는 태그를 봅니다 .
-
 어떤 HTML 문서를 열어도 필수적으로 가지고 있는 태그들입니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e34645d1-d845-4218-ae5f-e24f5948b228/Untitled.png)
+✨ **예시**
 
-1 선언이 관습화되었다.(없어도 괜찮지만..)
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+```
 
-2 하나의 문서에 하나만 있다. 모든 요소들은 html 태그안에 들어가야한다.
-
-두개의 자식을 가진다. head, body
-
-3 탭 제목 정보, 혹은 검색 엔진
-
-4 바디는 그 외 모든것
+- `<!DOCTYPE html>`: (없어도 문제는 없으나)선언이 관습화 됨
+- `html`: 하나의 HTML 문서에 하나만 있다. 모든 요소들은 html 태그 안에 들어가야 합니다. 페이지 전체의 컨텐츠를 감싸는 루트(root) 요소
+  - `head`: 웹 브라우저 화면에 직접적으로 나타나진 않는 웹페이지의 정보
+    - meta tag: 문서의 일반적인 정보와 문자 인코딩을 명시
+    - title: (문서의 컨텐츠가 아니라) HTML문서 전체의 타이틀 표현하기 위한 메타데이터
+  - `body`: body는 그 외 모든것. 웹 브라우저 화면에 나타나는 모든 콘텐츠
 
 # 6. HEAD 태그
 
-html 첫 번째 자식요소인 head 태그
-
-태그의 정보 파악하는 방법
-
-검색 키워드
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76942ac1-ad4d-4d08-a4ac-fb0038063128/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/93c23ded-a9c5-416f-9e9e-5aef284cfc43/Untitled.png)
-
-모질라에서 만든 웹사이트고 웹 개발에 관련된 전반적인 내용이 있는 사이트입니다.
-
-여기서 기계는 웹브라우저입니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/320a9be5-d939-4bfb-98c7-58524f006efa/Untitled.png)
+- HTML 첫 번째 자식요소인 head 태그
+- HTML <head> 요소는 기계가 식별할 수 있는 문서 정보(메타데이터)를 담습니다.
+  여기에서 기계는 웹브라우저입니다.
 
 # 7. BODY 태그
 
-mdn 링크
+- HTML <body> 요소는 HTML 문서의 내용을 나타냅니다.
+- 한 문서에 하나의 <body> 요소만 존재할 수 있습니다.
 
 # 8. 태그를 구분짓는 특성
 
-몇가지 구분으로 나뉠 수 있다.
+body 영역에 들어가는 태그는 몇 가지 구분으로 나뉠 수 있다.
 
-body 영역에 들어가는 태그
+### 1) 구획을 나누는 태그
 
-그룹화할때 하는 태그를 구획을 나누는 태그라고 한다.
+- 단독으로 사용했을 때에는 눈에 보이지 않는다.
+- 여러가지 요소를 묶어서 그룹화
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/249f5381-3fc5-4053-b412-9f7b681de120/Untitled.png)
+그룹화할때 하는 태그를 구획을 나누는 태그라고 합니다. 내부 아이템이 없을 때는 눈에 보이지 않습니다.
 
-내부 아이템이 없을떄는 눈에 보이지 않습니다 .
+### 2) 그 자체로 요소인 태그
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b1fc3e3d-1db9-4477-909e-539b42e6dfa4/Untitled.png)
+- 단독으로 사용했을 때에도 눈으로 확인할 수 있다.
 
-구획을 나누는 태그가 중요한 이유는
+# 9. 블록(Block)과 인라인(Inline)
 
-# 9. 블록과 인라인
+태그를 구분 짓는 특성 중 블록과 인라인도 있습니다.
 
-태그를 구분 짓는 특성중 블록과 인라인이 또 있습니다.
+### 1) 블록(Block)
 
-그림 1, 4는 블록 2, 3는 인라인
+- 블록 레벨 요소는 언제나 새로운 줄에서 시작하고 좌우 양쪽으로 최대한 늘어나 가능한 모든 너비를 차지합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/394a4b9c-f789-43b8-8c3d-e43afe274202/Untitled.png)
+블록은 본인 너비와 상관없이 한층을 모두 차지합니다. body 아래에 있다면 보여지는 웹 페이지의 가로 너비를 모두 차지합니다. 부모가 허용하는 가로 최대까지 모두 차지합니다.
 
-블록은 본인 너비와 상관없이 한층을 모두 차지합니다. body 아래에 있다면 보여지는 웹페이지의 가로 너비를 모두 차지합니다. 부모가 허용하는 가로 최대까지 모두 차지합니다.
+### 2) 인라인(Inline)
+
+- 인라인 요소는 줄의 어느 곳에서나 시작할 수 있습니다.
+- 바로 이전 요소가 끝나는 지점부터 시작하며, 요소의 내용(content)만큼만 차지합니다.
 
 인라인은 해당 컨텐츠가 가지는 공간만큼 차지합니다.
 
-3뒤에 4 블록이 들어갈 수 없고 한층을 다 차지합니다.
-
 # 10 콘텐츠 카테고리
+
+- 하나의 HTML 요소가 여러 콘텐츠 카테고리 내의 포항관계에 들어갈 수 있습니다.
+
+|                                         |                                                                                          |
+| --------------------------------------- | ---------------------------------------------------------------------------------------- |
+| 메타데이터 콘텐츠 (Metadata Content)    | 문서의 메타 데이터(정보). 다른 문서를 가리키는 링크 등을 나타내는 요소                   |
+| 플로우 콘텐츠 (Flow Content)            | 웹 페이지상에 메타데이터를 제외하고 거의 모든 요소. 보통 텍스트나 임베디드 콘텐츠를 포함 |
+| 섹션 콘텐츠 (Section Conetnt)           | 문서의 구획(Section)을 나눌 때 사용                                                      |
+| 헤딩 콘텐츠 (Heading Content)           | 섹션의 제목(heading)과 관련된 요소                                                       |
+| 프레이징 콘텐츠 (Phrasing Content)      | 문단에서 텍스트를 마크업 할 때 사용                                                      |
+| 임베디드 콘텐츠 (Embedded Content)      | 이미지나 비디오 등 외부 소스를 가져오거나 삽입할 때 사용되는 요소                        |
+| 인터랙티브 콘텐츠 (Interactive Content) | 사용자와의 상호작용을 위한 컨텐츠 요소입니다.                                            |
