@@ -1,69 +1,185 @@
-# 1. 목록 - ul, ol, li - 1
+# 목록과 표
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/108faeef-2e27-41a2-997c-7d56a9f9872a/Untitled.png)
+## 1. 목록 - ul, ol, li
 
-ol(orderd list) 정렬
+### 1) ol(The Ordered List element) 정렬
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/08b8bc34-74e6-4cca-a2d7-38f15d131972/Untitled.png)
+`start`
+목록 항목에 대해 계산을 시작할 정수입니다. 번호 type가 문자나 로마 숫자인 경우에도 항상 아라비아 숫자(1, 2, 3 등) 입니다. 예를 들어 문자 "d" 또는 로마 숫자 "iv"에서 요소의 번호를 매기기 시작하려면 를 사용 start="4"합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/345f7628-401c-4fa9-863f-ce648c41d7ff/Untitled.png)
+`type`
+번호 매기기 유형을 설정합니다. 기본값은 숫자.
 
-type 사용 가능
+- a 소문자의 경우
+- A 대문자의 경우
+- i 소문자 로마 숫자의 경우
+- I 대문자 로마 숫자의 경우
+- 1 숫자용(기본값)
 
-1, A, a, I, i, 기본값은 숫자
+`type` 둘러싸인 `<li>` 요소에 다른 속성이 사용되지 않는 한 지정된 유형이 **전체 목록에 사용**됩니다 .
 
-# 2. 목록 - ul, ol, li - 2
+✨ **예시**
 
-ul 비정렬
+```html
+<ol type="i">
+  <li>Introduction</li>
+  <li>List of Greivances</li>
+  <li>Conclusion</li>
+</ol>
+```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/367f7552-ba46-4e39-9ed4-d90e768dcee7/Untitled.png)
+🧪 **실행결과**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/16588780-37bf-45a2-bc14-8409e647da1f/Untitled.png)
+![ol 예제](./images/ol.png)
 
-중첩이 가능하다.
+### 2) ul(The Unordered List element) 비정렬
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c2088a27-0718-4aa9-a7d0-f2f4419b1994/Untitled.png)
+✨ **예시**
 
-# 3. 정의 목록 - dl, dt, dd
+```html
+<ol>
+  <li>first item</li>
+  <li>
+    second item
+    <!-- closing </li> tag not here! -->
+    <ul>
+      <li>second item first subitem</li>
+      <li>second item second subitem</li>
+      <li>second item third subitem</li>
+    </ul>
+  </li>
+  <li>third item</li>
+</ol>
+```
 
-definition
+🧪 **실행결과**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/085550b9-db6c-4690-8e1b-0fd442e4278e/Untitled.png)
+![ul 예제](./images/ul.png)
 
-dt : term 용어
+## 2. 정의 목록 - dl, dt, dd
 
-dd: descript 설명
+### 1) <dl>: The Description List element
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58b93d28-56ce-4ad7-b612-3821354a0e62/Untitled.png)
-
+`<dl>`은 `<dt>`(요소를 사용하여 지정됨) 및 `<dd>`(요소에서 제공됨) 그룹 목록을 묶습니다. 용어 사전 구현이나 메타데이터(키-값 쌍 목록)를 표시하는 것입니다.
 하나의 용어에 하나의 정의 형태로 이루어져 있다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b76258e-2f62-4052-906c-2495db58ffc3/Untitled.png)
+### 2) <dt>: The Description Term element 용어
 
-div로 감싸는 건 가능하지만 dt와 dd의 형제태그로 사용은 불가능하다.
+### 3) <dd>: <dd>: The Description Details element 설명
 
-# 4. 표 - table, tr, th, td
+✨ **예시**
 
-th 가 갖을 수 있는 특성이 있습니다. scope 표준에 맞게 접근성을 높여줍니다.
+```html
+<p>Cryptids of Cornwall:</p>
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2d46eaca-65d3-4b85-af1a-55e437d67753/Untitled.png)
+<dl>
+  <dt>Beast of Bodmin</dt>
+  <dd>A large feline inhabiting Bodmin Moor.</dd>
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c87614f-06a2-4bec-8d23-7c204b4aef8d/Untitled.png)
+  <dt>Morgawr</dt>
+  <dd>A sea serpent.</dd>
 
-colspan 으로 차지하는 영역을 넓힐 수 있습니다.
+  <dt>Owlman</dt>
+  <dd>A giant owl-like creature.</dd>
+</dl>
+```
 
-# 5. thread, tbody, tfoot
+🧪 **실행결과**
 
-테이블도 thread, tbody, tfoot로 나눠서 마크업이 가능합니다.
+![dl 예제](./images/dt.png)
 
-# 6. caption
+### 이름-값 그룹을 `<div>`로 감싸기
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6fe5b5c5-0d05-4145-96a8-1451b570a261/Untitled.png)
+```html
+<dl>
+  <div>
+    <dt>Name</dt>
+    <dd>Godzilla</dd>
+  </div>
+</dl>
+```
 
-표 위에 가운데 정렬로 들어갑니다.
+`<div>`로 감싸는 건 가능하지만 dt와 dd의 형제 태그로 사용은 불가능하다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dfaa743a-3f7c-4b33-89d4-468225b427d3/Untitled.png)
+## 3. 표 - table, tr, th, td
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/657b5e75-793b-41ca-bb1d-1cb0f3e8403f/Untitled.png)
+### `<tr>`
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/68d43e73-c4ea-4ac5-9111-da5971ea69bb/Untitled.png)
+속성
+`scope`
+`<th>` 가 갖을 수 있는 특성이 있습니다. scope 표준에 맞게 접근성을 높여줍니다.
+
+- row: 헤더가 속한 행의 모든 ​​셀과 관련됩니다.
+- col: 헤더가 속한 열의 모든 셀과 관련됩니다.
+
+✨ **예시**
+
+```html
+<table>
+  <tr>
+    <th scope="col">Player</th>
+    <th scope="col">Gloobles</th>
+    <th scope="col">Za'taak</th>
+  </tr>
+  <tr>
+    <th scope="row">TR-7</th>
+    <td>7</td>
+    <td>4,569</td>
+  </tr>
+  <tr>
+    <th scope="row">Khiresh Odo</th>
+    <td>7</td>
+    <td>7,223</td>
+  </tr>
+</table>
+```
+
+🧪 **실행결과**
+
+![table 예제](./images/table.png)
+
+### `<td>`
+
+속성
+`colspan`
+`rowspan`
+
+## 4. thead, tbody, tfoot
+
+테이블도 thead, tbody, tfoot로 나눠서 마크업이 가능합니다.
+
+✨ **예시**
+
+```html
+<table>
+  <caption>
+    Council budget (in £) 2018
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Items</th>
+      <th scope="col">Expenditure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Donuts</th>
+      <td>3,000</td>
+    </tr>
+    <tr>
+      <th scope="row">Stationery</th>
+      <td>18,000</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+🧪 **실행결과**
+
+![thead 예제](./images/thead.png)
+
+## 5. caption: 표 설명 요소
+
+- 부모 `<table>` 요소의 첫 번째 자식이어야 합니다.
+- 가운데 정렬로 들어갑니다.
+- `<caption>` 요소를 가진 `<table>` 요소가 만약 `<figure>` 요소의 유일한 자식인 경우 `<figcaption>`을 대신 사용합니다.
