@@ -38,124 +38,127 @@
 
 검색창에 can i use 검색. https://caniuse.com/
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cf9dd5ce-fb83-48e4-9e03-481e14e77aec/Untitled.png)
+## 3. 반응형 이미지 - srcset
 
-# 4. 반응형 이미지 - srcset
+`src`
+이미지의 URL.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/64570365-20d2-415e-8cff-5c4cb4bf79a0/Untitled.png)
+`srcset`
+쉼표로 구분하는 한 개 이상의 문자열 목록입니다. 반응형(view point) 이미지. 사용자의 view port에 따라서 화면이 보여집니다.
+
+- 이미지의 URL
+- 선택적으로, 공백과 함께 그 뒤를 잇는...
+  - **너비 서술자**(양의 정수와 바로 뒤의 '**w**' 문자). 너비 서술자의 값을 sizes 특성으로 지정한 소스 크기로 나눠서 픽셀 밀도를 구합니다.
+  - **픽셀 밀도 서술자**(양의 실수와 바로 뒤의 '**x**' 문자). 서술자를 포함하지 않은 경우 기본값인 1x 로 간주합니다.
 
 환경에 따라 이미지 크기가 변하게 됩니다.
+ps. 실행이 안될 경우, 개발자 모드 > Network 탭 > Disable cashe 선택합니다.
+크롬은 이미지를 저장소에 저장하여 재방문하면 같은 이미지를 보여주기 때문..
 
-이미지 만드는 법 [placeholder.com](http://placeholder.com)
+[placeholder.com](http://placeholder.com) 이미지 만드는 법 https://via.placeholder.com/150
 
-300
+✨ **예시**
 
-450
+```html
+<img
+  src="images/large.png"
+  srcset="
+    images/small_srcset.png 300w,
+    images/medium.png       450w,
+    images/large.png        600w
+  "
+  sizes="(min-width: 600px) 600px,
+          (min-width: 600px) 450px,
+          300px,"
+  alt="responsive images"
+/>
+```
 
-600
+## 4. 반응형 이미지 - sizes
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fd6e2f3f-cd19-4dc1-a1b4-5f88a613209c/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/886863d1-38f7-4985-98db-b18b6de1480f/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6a67fda9-a78a-4718-8885-95ecf36b5aa9/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/32c67f33-3f7b-4660-9c7b-b192d0fb7b48/Untitled.png)
-
-# 5. 반응형 이미지 - sizes
-
-srcset은 작은화면은 작은 이미지 등등 뷰 포트에 따라 다른 이미지를 주는 경우
-
-sizes
-
+view port size에 맞게 설정할 수 있습니다.
 min-width 가장최소너비(이 보다 커야됨)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2fc51f1b-8fa6-4edc-92e4-ac20079cdc0c/Untitled.png)
-
-# 6. video
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1b2a935b-8d28-4959-ac46-30f4fa5c37b8/Untitled.png)
-
-mp4 파일 하나 준비
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/38890fcc-b0ed-41ab-8860-ad3795c0803e/Untitled.png)
+## 5. video
 
 이미지 태그는 내부에 자식 요소를 가질 수가 없으나 비디오는 자식 태그를 가질 수 있습니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/87aba5cf-b9b5-4425-a0ca-d1f265e682c0/Untitled.png)
+- src가 선택사항입니다.
+- `controls`
+  브라우저는 사용자가 볼륨, 탐색 및 재생 일시 중지/재시작을 훌 수 있는 컨트롤을 제공합니다.
+- `autoplay`
+  비디오 자동 재생을 비활성화하려면 **autoplay="false"**작동하지 않습니다. 속성이 <video>태그 에 있는 경우 동영상이 자동 재생됩니다 . 자동 재생을 제거하려면 속성을 완전히 제거해야 합니다.
+- `muted`
+  설정하면 오디오가 처음에 무음으로 설정됩니다. 기본값 false은 비디오가 재생될 때 오디오가 재생됨을 의미하는 입니다.
+- `poster`
+  썸네일 사용. 이 속성을 지정하지 않으면 첫 번째 프레임이 썸네일이 됩니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a5598e80-6d2c-4fb3-aa73-79063f1716ed/Untitled.png)
+## 6. audio
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0ed3bea2-3bf5-4e13-ad0d-98d168ce3575/Untitled.png)
+### `<audio>` with multiple `<source>` elements
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/98cf9fd8-69e7-4431-8bd5-a1354beffbc7/Untitled.png)
-
-src가 선택사항입니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/689f8c71-1780-43cd-9623-31232cd08613/Untitled.png)
-
-비디오 추가로 보여지는 속성이 controle
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/113ca0dd-9e59-4362-abd4-d7a7e415ad6c/Untitled.png)
-
-소리, 전체화면 등등 옵션값을 줄 수 있습니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c35bc8c0-4017-47e1-b355-97db20932dfe/Untitled.png)
-
-autoplay는 새로고침한 경우 비디오가 재생되지 않습니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/05b980b3-4fcf-4b10-a119-f831f768c7aa/Untitled.png)
-
-인스타그램처럼 사운드 없이 비디오가 시작되게 할 수 있습니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/350dd96d-a559-48e8-a2a6-14153042f4e5/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dd242425-8fac-40a8-98be-bc50787ad23c/Untitled.png)
-
-autoplay와 muted를 같이 써주면 비디오가 시작되는 것을 볼 수 있습니다.
-
-poster로 썸네일 띄울 수 있습니다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/294ce1f7-dadd-4cb2-ba28-040a3c913cbd/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/46b69843-7310-4ed3-98fe-131a5116bd70/Untitled.png)
-
-# 7. audio
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/82921635-0f36-45e4-bdc7-6687183e8b71/Untitled.png)
-
-multiple source elements
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd21f0c3-6590-4bcb-991d-ad04a12a7043/Untitled.png)
-
+✨ **예시**
 브라우저가 지원가능한 소스들을 찾게됩니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/812b4876-ab1a-4f72-a421-1aba3f1956f5/Untitled.png)
+```html
+<audio controls>
+  <source src="foo.opus" type="audio/ogg; codecs=opus" />
+  <source src="foo.ogg" type="audio/ogg; codecs=vorbis" />
+  <source src="foo.mp3" type="audio/mpeg" />
+</audio>
+```
 
-비디오는 muted를 써서 사용 가능하지만
+비디오는 muted를 써서 영상 바로 시작이 가능하지만 오디오는 불가능합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/532a66fa-e77e-4d34-a104-9345dad77473/Untitled.png)
+## 6. canvas, iframe
 
-# 8. canvas, iframe
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9d81761d-d30d-45df-9eea-b0424f9eebd9/Untitled.png)
+### 1) `<canvas>`: The Graphics Canvas element
 
 마크업을 html로 하고 내부 그림을 그리기 위해서 자바스크립트를 이용합니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8f36f0d6-7e03-491e-8870-a75cbb8e98bd/Untitled.png)
+✨ **예시**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8c9a3c5e-4af6-4cb0-9c89-5ecbf4a2d4a7/Untitled.png)
+**html**
 
-소스를 외부에서 불러와서 프레임안에 씁니다.
+```html
+<canvas width="300" height="300">
+  An alternative text describing what your canvas displays.
+</canvas>
+```
 
-예제는 다른 html을 띄어준 것 입니다.
+**javascript**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c31f0329-7d6d-454b-b739-351572ca94e5/Untitled.png)
+```javascript
+const canvas = document.querySelector("canvas");
+const ctx = canvas.getContext("2d");
+ctx.fillStyle = "green";
+ctx.fillRect(10, 10, 100, 100);
+```
 
-보통 구글 웹 같은 것 삽입할 때 많이 사용합니다.
+🧪 **실행결과**
 
-인라인 프레임으로 허용된 url만 사용 가능합니다. ( 그래서 네이버지도는 안될 수도 있습니다....)
+![canvas 예제](./images/canvas.png)
 
-검색에 google map iframe
+### 2) `<iframe>`: The Inline Frame element
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1bdca9ff-31ce-4033-96e0-fb88b632e83d/Untitled.png)
+현재 문서 안에 다른 HTML 페이지를 삽입합니다. 보통 구글 웹 같은 것 삽입할 때 많이 사용합니다. 인라인 프레임으로 허용된 url만 사용 가능합니다. ( 그래서 네이버지도는 안될 수도 있습니다....)
+
+✨ **예시**
+
+```html
+<iframe
+  id="inlineFrameExample"
+  title="Inline Frame Example"
+  width="300"
+  height="200"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+>
+</iframe>
+```
+
+🧪 **실행결과**
+
+![iframe 예제](./images/iframe.png)
+
+검색창에 google map iframe
+https://developers.google.com/maps/documentation/embed/get-started
