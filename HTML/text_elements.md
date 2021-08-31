@@ -42,7 +42,7 @@ HTML `<blockquote>` 요소는 안쪽의 텍스트가 긴 인용문임을 나타�
 </figure>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![blockquote 예제](./images/blockquote.png)
 
@@ -61,7 +61,7 @@ HTML `<q>`요소는 둘러싼 텍스트가 짧은 인라인 인용문이라는�
 </p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![q 예제](./images/q.png)
 
@@ -73,6 +73,8 @@ HTML `<pre>` 요소는 미리 서식을 지정한 텍스트를 나타내며, HTM
 
 HTML `<figure>` 요소는 독립적인 콘텐츠를 표현합니다. `<figcaption>` 요소를 사용해 설명을 붙일 수 있습니다.
 
+✨ **예시**
+
 ```html
 <figure>
   <img src="/media/cc0-images/elephant-660-480.jpg" alt="Elephant at sunset" />
@@ -80,7 +82,7 @@ HTML `<figure>` 요소는 독립적인 콘텐츠를 표현합니다. `<figcaptio
 </figure>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![figure 예제](./images/figure.png)
 
@@ -94,6 +96,8 @@ HTML `<figure>` 요소는 독립적인 콘텐츠를 표현합니다. `<figcaptio
 
 텍스트 관련 태그. 텍스트에 마우스를 가져가면 원래 의미를 툴팁으로 나타낼 때 쓰입니다.
 
+✨ **예시**
+
 ```html
 <p>
   You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your
@@ -101,13 +105,15 @@ HTML `<figure>` 요소는 독립적인 콘텐츠를 표현합니다. `<figcaptio
 </p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![abbr 예제](./images/abbr.png)
 
 ### 2) `<address>`: 연락처 주소 요소
 
 사람이나 사람 또는 조직에 대한 연락처 정보를 제공하는 것을 나타냅니다. 기울림
+
+✨ **예시**
 
 ```html
 <address>
@@ -116,7 +122,7 @@ HTML `<figure>` 요소는 독립적인 콘텐츠를 표현합니다. `<figcaptio
 </address>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![address 예제](./images/address.png)
 
@@ -136,6 +142,8 @@ HTML `<figure>` 요소는 독립적인 콘텐츠를 표현합니다. `<figcaptio
 
 b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의 제품 이름
 
+✨ **예시**
+
 ```html
 <p>
   The two most popular science courses offered by the school are
@@ -145,11 +153,13 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 </p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![b 예제](./images/b.png)
 
 ### 2) `<strong>`: 높은 중요도 요소
+
+✨ **예시**
 
 ```html
 <p>
@@ -159,7 +169,7 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 </p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![strong 예제](./images/strong.png)
 
@@ -171,15 +181,19 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 
 기술 용어, 외국어 구절, 등장인물의 생각 등 기울임꼴로 표시합니다.
 
+✨ **예시**
+
 ```html
 <p>I looked at it and thought <i>This can't be real!</i></p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![i 예제](./images/i.png)
 
 ### 2) `<em>`: 강세 요소
+
+✨ **예시**
 
 ```html
 <p>Get out of bed <em>now</em>!</p>
@@ -189,7 +203,7 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 <p>This is <em>not</em> a drill!</p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![em 예제](./images/em.png)
 
@@ -199,6 +213,8 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 
 현재 맥락에 관련이 깊거나 중요해 표시 또는 하이라이트한 부분을 나타냅니다.
 
+✨ **예시**
+
 ```html
 <p>
   Several species of <mark>salamander</mark> inhabit the temperate rainforest of
@@ -206,13 +222,15 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 </p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![mark 예제](./images/mark.png)
 
 ### 2) `<small>`: 덧붙임 글 요소
 
 덧붙이는 글이나, 저작권과 법률 표기 등의 작은 텍스트를 나타냅니다.
+
+✨ **예시**
 
 ```html
 <p>
@@ -230,13 +248,15 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 </p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![small 예제](./images/small.png)
 
 ### 3) `<sub>`: 아래 첨자 요소
 
 첨자로 표시해야 요소를 지정 인라인 텍스트입니다.
+
+✨ **예시**
 
 ```html
 <p>
@@ -246,7 +266,7 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 </p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![sub 예제](./images/sub.png)
 
@@ -254,13 +274,15 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 
 지수, 서수 ...
 
+✨ **예시**
+
 ```html
 <p>
   <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var>
 </p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![sup 예제](./images/sup.png)
 
@@ -283,6 +305,8 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 
 키보드, 음성 입력, 또는 기타 텍스트 입력 장치로부터 사용자 입력 텍스트를 나타내는 인라인 텍스트 범위를 나타낸다.
 
+✨ **예시**
+
 ```html
 <blockquote>
   There is <del>nothing</del> <ins>no code</ins> either good or bad, but
@@ -300,7 +324,7 @@ b 태그는 문장 전체로 쓰지 않습니다. 요약의 키워드, 리뷰의
 </p>
 ```
 
-🎤 **실행결과**
+🧪 **실행결과**
 
 ![예제](./images/del.png)
 
@@ -318,7 +342,7 @@ Anchor: 닻 특정하 위치에 닻을 내려서 다른 위치에서도 그 곳�
 `_parent`: 현재의 부모 브라우징 컨텍스트. 상위 항목이 없으면 로 동작합니다 `_self`.
 `_top`: 최상위 브라우징 컨텍스트(현재 컨텍스트의 조상인 "가장 높은" 컨텍스트). 상위 항목이 없으면 로 동작합니다 `_self`.
 
-## 15. 엔티티(Entity)
+## 14. 엔티티(Entity)
 
 <, >, &, 예약어
 일부 특수 문자는 HTML에서 사용하도록 예약되어 있습니다. 즉, 브라우저에서 해당 문자를 HTML 코드로 구문 분석합니다.
