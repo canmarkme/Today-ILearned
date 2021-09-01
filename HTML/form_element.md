@@ -10,7 +10,10 @@
 양식 데이터를 처리할 프로그램의 URL, `<button>`, `<input type="submit">`, `<input type="image>` 요소의 formaction(for one form multi action) 특성으로 재정의할 수 있습니다.
 
 `method`
-양식을 제출할 때 사용할 [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) 메서드. - post: POST 메서드. 양식 데이터를 요청 본문으로 전송합니다. - get: GET 메서드. 양식 데이터를 `action` URL과 `?` 구분자 뒤에 이어 붙여서 전송합니다.
+양식을 제출할 때 사용할 [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) 메서드. <br>
+
+- post: POST 메서드. 양식 데이터를 요청 본문으로 전송합니다.
+- get: GET 메서드. 양식 데이터를 `action` URL과 `?` 구분자 뒤에 이어 붙여서 전송합니다.
 
 ## 3. label과 input
 
@@ -22,7 +25,7 @@
 
 `<input>` 요소의 동작 방식은 **type** 특성에 따라 현격히 달라지므로, 각각의 유형은 별도의 참고 문서에서 더 자세히 확인할 수 있습니다. 특성을 지정하지 않은 경우, 기본값은 **text** 입니다.
 
-**특성**
+**속성**<br>
 `<for>`
 같은 문서 내의 `<label>` 요소로서, for 속성값과 일치하는 id를 가진 문서의 첫 번째 요소는 그 label 요소의 labeled control라고 합니다. `<label>`은 본인 짝을 id로 구분함.
 
@@ -32,7 +35,7 @@ name 값은 하나의 form 내에서 구분하는 것이고 id는 라벨링할 �
 
 ![name 예제](./images/name.png)
 
-형재 요소로 쓰는 경우 for를 쓰지만 자식 요소로 쓰는 경우 쓰지 않는다.
+형제 요소로 쓰는 경우 for를 쓰지만 자식 요소로 쓰는 경우 쓰지 않는다.
 
 🧪 **실행결과**
 
@@ -65,7 +68,7 @@ name 값은 하나의 form 내에서 구분하는 것이고 id는 라벨링할 �
 위의 예제에서 보듯, `<fieldset>` 요소는 HTML 양식 속에서 그룹을 만들 수 있으며 `<legend>` 요소로 그룹의 설명을 제공할 수 있습니다. `<fieldset>`요소의 `<legend>`가 첫 번째 자식이어야 합니다.
 `<fieldset>`은 별도의 블록으로 묶이는 것입니다.
 
-**속성**
+**속성**<br>
 `<disabled>`
 지정한 경우, 모든 자손 컨트롤을 비활성화합니다.
 
@@ -253,7 +256,7 @@ step 간격
 - `reset`: `<input type "reset">` 처럼, 모든 컨트롤을 초깃값으로 되돌립니다.
 - `button` : 기본 행동이 없으며 클릭했을 때 아무것도 하지 않습니다. 클라이언트 스크립트와 연결할 수 있습니다.
 
-**아이콘 버튼**
+**아이콘 버튼**<br>
 아이콘만 사용해 기능을 표현하는 버튼은 접근 가능한 이름을 갖지 않습니다.
 
 ## 11. select, option, optgroup
