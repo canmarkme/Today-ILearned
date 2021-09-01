@@ -44,6 +44,7 @@ The Learning Record
   - [폼 관련 요소](https://github.com/canmarkme/Today-ILearned/blob/main/HTML/form_element.md)
   - [메타데이터 요소](https://github.com/canmarkme/Today-ILearned/blob/main/HTML/metadata_element.md)
   - [전역속성](https://github.com/canmarkme/Today-ILearned/blob/main/HTML/global_attribute.md)
+- [ ] [CSS 강의 듣기]
 - [ ] [교육과정 OT 19시]
 
 #### 09월 02일
