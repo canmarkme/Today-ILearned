@@ -50,7 +50,8 @@ The Learning Record
 #### 09월 02일
 
 - [x] [CSS 강의 듣기]
-- [ ] [CSS 강의 정리]
+- [x] [CSS 강의 정리]
+  - [개요](https://github.com/canmarkme/Today-ILearned/blob/main/CSS/outline.md)
 - [x] [정기테스트 18시]
 
 #### 09월 06일
