@@ -9,14 +9,14 @@ The Learning Record
 
 #### 08월 28일
 
-- [x] [HTML 강의 듣기]
+- [x] HTML 강의 듣기
 
   - [개요]
   - [실습환경 세팅]
   - [HTML이란?]
   - [텍스트 요소]
 
-- [x] [HTML 강의 정리]
+- [x] HTML 강의 정리
   - [개요](https://github.com/canmarkme/Today-ILearned/blob/main/HTML/outline.md)
   - [실습환경](https://github.com/canmarkme/Today-ILearned/blob/main/HTML/setting.md)
 
