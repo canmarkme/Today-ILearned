@@ -54,6 +54,13 @@ The Learning Record
   - [개요](https://github.com/canmarkme/Today-ILearned/blob/main/CSS/outline.md)
 - [x] [정기테스트 18시]
 
+#### 09월 03일
+
+- [ ] [CSS 강의 듣기]
+- [ ] [정기테스트 오답노트 작성]
+- [ ] [개발자의 글쓰기(저자: 김철수) 독서]
+- [ ] [1주차 회고 작성]
+
 #### 09월 06일
 
 - [ ] [제로베이스 프로필 관리 100% 업데이트]
