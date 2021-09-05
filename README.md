@@ -76,13 +76,13 @@ The Learning Record
   - 박스모델
   - 레이아웃
   - 색상과 배경
-- [x] 1주차 회고 작성
+- [x] [1주차 회고 작성](https://github.com/canmarkme/Today-ILearned/blob/main/Journal/1st_retrospect.md)
 
-#### 09월 03일
+#### 09월 04일
 
 - [x] HTML 복습
 
-#### 09월 03일
+#### 09월 05일
 
 - [x] HTML 복습
 - [x] HTML 주말과제
