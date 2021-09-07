@@ -95,6 +95,10 @@ The Learning Record
 
 #### 09월 07일
 
+- [x] CSS 강의 듣기
+  - transform
+  - transition
+  - 애니메이션
 - [ ] 프론트엔드 강사님 라이브 세션 19:30~21:00
 
 #### 09월 09일
