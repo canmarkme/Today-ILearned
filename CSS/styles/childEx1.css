@@ -1,0 +1,11 @@
+/* Pseudo-Class Selector(가상 클래스 선택자) */
+
+/* 1. first-child */
+li:first-child {
+  color: green;
+}
+
+/* 3. nth-child */
+li:nth-child(2n){
+  color: hotpink
+}

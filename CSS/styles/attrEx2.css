@@ -1,0 +1,16 @@
+/* Attribute selector(속성선택자) */
+
+/* 1. [attr^=value] */
+a[href^="https://"]{
+  font-style: italic;
+}
+
+/* 2. [attr$=value] */
+a[href$=".com"]{
+  color: silver;
+}
+
+/* 3. [attr*=value] */
+a[href*="example"]{
+  color: sienna;
+}
