@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+   
+    /* input 요소가 사용 가능한 상태일 때*/
+    input[type=text]:enabled {
+      background-color: skyblue;
+    }
+
+    /* input 요소가 사용 불가능한 상태일 때*/
+    input[type=text]:disabled {
+      background-color: silver;
+    }
+
+    /* input 요소 radio button 체크된 상태일 때*/
+    input[type=radio]:checked {
+      outline: 3px solid red;
+    }
+
+    /* input 요소 checkbox 체크된 상태일 때*/
+    input[type=checkbox]:checked {
+      outline: 3px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input type="text" placeholder="1">
+    <input type="text" placeholder="2">
+    <input type="text" placeholder="3" disabled>
+  </div>
+
+  <div>
+  <input type="radio" checked="checked" value="male" name="gender"> <span>Male</span><br>
+  <input type="radio" value="female" name="gender"> <span>Female</span><br>
+  <input type="radio" value="neuter" name="gender" disabled> <span>Neuter</span><hr>
+  </div>  
+
+  <div>
+  <input type="checkbox" checked="checked" value="bicycle"> <span>I have a bicycle</span><br>
+  <input type="checkbox" value="car"> <span>I have a car</span><br>
+  <input type="checkbox" value="motorcycle" disabled> <span>I have a motorcycle</span>
+  </div>
+</body>
+</html>
