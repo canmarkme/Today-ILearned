@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    div{
+      width:150px;
+      height:150px;
+      background-color: darkseagreen;
+      border: 3px solid darkslategrey;
+    }
+
+    #box2, #box3 {
+      margin-top: -60px;
+    }
+
+    #box2{
+      margin-left: 40px;
+      position: relative;
+      z-index: -1;
+    }
+
+    #box3{
+      position: relative;
+      z-index: 999;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div id="box1">1</div>
+  <div id="box2">2</div>
+  <div id="box3">3</div>
+</body>
+</html>
