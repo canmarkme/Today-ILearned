@@ -111,9 +111,13 @@ The Learning Record
 
 #### 09월 09일
 
-- [ ] 정기테스트 18시
+- [x] CSS 강의 정리
+  - [박스모델](https://github.com/canmarkme/Today-ILearned/blob/main/CSS/05.%20%EB%B0%95%EC%8A%A4%EB%AA%A8%EB%8D%B8.md)
+  - [레이아웃](https://github.com/canmarkme/Today-ILearned/blob/main/CSS/06.%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)
+- [x] 정기테스트 18시
 
 #### 09월 14일
+
 
 - [ ] 프론트엔드 강사님 라이브 세션 19:30~21:00
 
