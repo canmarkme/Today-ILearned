@@ -116,6 +116,21 @@ The Learning Record
   - [레이아웃](https://github.com/canmarkme/Today-ILearned/blob/main/CSS/06.%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.md)
 - [x] 정기테스트 18시
 
+#### 09월 10일
+
+- [x] CSS 강의 정리
+  - [색상과 배경](https://github.com/canmarkme/Today-ILearned/blob/main/CSS/07.%20%EC%83%89%EC%83%81%EA%B3%BC%20%EB%B0%B0%EA%B2%BD.md)
+  - [transform](https://github.com/canmarkme/Today-ILearned/blob/main/CSS/08.%20transform.md)
+
+#### 09월 11일
+
+- [x] CSS 강의 정리
+  - [transition](https://github.com/canmarkme/Today-ILearned/blob/main/CSS/09.%20transition.md)
+  - [애니메이션](https://github.com/canmarkme/Today-ILearned/blob/main/CSS/10.%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md)
+- [ ] CSS 강의 듣기
+  - flexbox
+  - grid
+
 #### 09월 14일
 
 
