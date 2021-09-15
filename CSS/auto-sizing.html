@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  .container {
+    display: grid;
+  }
+
+  .container-fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .container-fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .item {
+    background-color: lightseagreen;
+    padding: 20px;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  body {
+    padding: 2em;
+  }
+
+  hr {
+    margin: 80px;
+  }
+</style>
+</head>
+<body>
+  auto-fit
+  <div class="container container-fit">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+  </div>
+
+  <hr>
+
+  auto-fill
+    <div class="container container-fill">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+    </div>
+  </body>
+</html>
