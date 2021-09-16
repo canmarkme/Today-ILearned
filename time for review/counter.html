@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>x
+  <style>
+  ol {
+    counter-reset: section;                /* ol 요소마다 이름이 section인 새 인스턴스를 생성합니다. */
+    list-style-type: none;
+  }
+
+  li::before {
+    content: counters(section, ".") " ";   /* section 카운터 값을 마침표(.)로 구분해 결합하여 표시합니다. */
+    counter-increment: section;            /* 해당 인스턴스 안에서 section 카운터 값 증가 */
+  }
+  </style>
+</head>
+<body>
+  <ol>
+    <li>list</li>
+    <li>list</li>
+    <ol>
+      <li>list</li>
+      <li>list</li>
+    </ol>
+  </ol>
+</body>
+</html>
