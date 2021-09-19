@@ -162,9 +162,9 @@ The Learning Record
   - [13. 미디어 쿼리](https://github.com/canmarkme/Today-ILearned/blob/main/CSS/13.%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EC%BF%BC%EB%A6%AC.md)
 - [x] 자바스크립트 기초 강의(드림코딩 by 엘리)
 
-#### 09월 18일
+#### 09월 19일
 - [x] 자바스크립트 기초 강의(드림코딩 by 엘리)
-- [ ] 백준 단계별 풀기 1 ~ 12 
+- [X] 백준 단계별 풀기 1 
 
 
 </details>
