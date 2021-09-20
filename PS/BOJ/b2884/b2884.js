@@ -13,17 +13,16 @@ rl.on("line", function (line) {
   let M = Number(input[1]);
   solution(H, M);
 
-
   function solution(H, M) {
-    if (M - 45 < 0) {
-      M = 60 + (M - 45);
-      H -= 1;
+    M -= 45;
+
+    if (M < 0) {
+      M += 60;
+      H--;
 
       if (H === -1) {
         H = 23;
       }
-    } else {
-      M -= 45;
     }
 
     console.log(H + " " + M);
