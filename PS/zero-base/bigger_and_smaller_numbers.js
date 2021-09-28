@@ -22,5 +22,3 @@ function answer(withdraw, total) {
 }
 
 
-
-//( % 5) 라면 continue;
