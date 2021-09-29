@@ -1,0 +1,1 @@
+![](../images/amousement_park_limit.png)
