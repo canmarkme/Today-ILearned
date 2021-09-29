@@ -1,0 +1,1 @@
+![](../images/max_in_array.png)

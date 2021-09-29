@@ -1,0 +1,1 @@
+![](../images/text_correction.png)
