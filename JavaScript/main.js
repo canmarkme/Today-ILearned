@@ -1,8 +1,8 @@
-let score = 80;
-let copy = score;
-score = 100;
+console.log(score);   // output: undefined
+var score = 50;
+console.log(score);   // output: 50
 
-console.log(score);   //  100
-console.log(copy);    // 
-
-
+// using let / const
+// ReferenceError: Cannot access 'score_2' before initialization
+console.log(score_2);
+let score_2 = 80;
