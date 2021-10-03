@@ -216,4 +216,4 @@ The Learning Record
 
 - [x] 수학 강의 정리
 - [x] 미션2. HTML/CSS 개인 과제 자료 수집
-
+</details>
