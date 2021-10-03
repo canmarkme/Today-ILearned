@@ -23,7 +23,7 @@ input[type="image"] {border-radius:0;}
 .i {font-style:italic;}
 
 /* layout */
-#wrap {min-width:1000px; background:url(../image/bg_header.gif) repeat-x 0 0; text-align:center;}
+#wrap {min-width:1000px; background:url(./images/bg_header.gif) repeat-x 0 0; text-align:center;}
 
 #header {position:relative; width:1000px; height:115px; margin:0 auto; text-align:left; z-index:300;}
 #header img {vertical-align:middle;}
