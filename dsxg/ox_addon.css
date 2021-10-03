@@ -1,0 +1,65 @@
+/* calendar */
+.ox_calendar {padding:13px; border:2px solid #777; border-radius:5px; background:#F9F9F9;}
+.ox_calendar button {margin:0; padding:0; border:0; background:none; text-align:center; vertical-align:middle; cursor:pointer; -webkit-appearance:none;}
+.ox_calendar button::-moz-focus-inner {margin:0; padding:0; border:0;}
+.ox_calendar .top {width:182px; height:38px; background:#F9F9F9;}
+.ox_calendar .fm_date {width:182px; background:#F9F9F9;}
+.ox_calendar .fm_date table {width:182px; border:0; table-layout:fixed;}
+.ox_calendar .fm_date caption {display:none;}
+.ox_calendar .fm_date th, .ox_calendar .fm_date td {height:22px; padding:0; border:0; font-size:12px; text-align:center; line-height:22px;}
+.ox_calendar .fm_date th {font-weight:bold; font-family:'±¼¸²',Gulim;}
+.ox_calendar .fm_date button {overflow:hidden; width:26px; height:22px; font-family:Tahoma,Sans-serif; font-size:11px; line-height:22px;}
+.ox_calendar .fm_date button:hover, .ox_calendar .fm_date button.on {border-radius:10px; background:#05B; color:#FFF;}
+.ox_calendar .fm_date .sun {color:#F42;}
+.ox_calendar .fm_date .side {color:#BBB;}
+.ox_calendar .fm_date .today {font-weight:bold;}
+.ox_calendar .fm_list {display:none; padding:2px; border:1px solid #999; background:#FFF;}
+.ox_calendar .fm_list ul {width:176px; height:126px; margin:0; padding:0; list-style:none;}
+.ox_calendar .fm_list ul.year {overflow:auto; height:302px;}
+.ox_calendar .fm_list li {float:left; margin:0; padding:0;}
+.ox_calendar .fm_list button {float:left; overflow:hidden; background:#FFF; font-family:Tahoma,Sans-serif;}
+.ox_calendar .fm_list .on {background:#FE0; color:#05B; font-weight:bold;}
+.ox_calendar .fm_list .year button {width:50px; height:25px; font-size:14px; line-height:25px;}
+.ox_calendar .fm_list .month button, .ox_calendar .fm_list .hour button, .ox_calendar .fm_list .min button {width:44px; height:42px; font-size:17px; line-height:42px;}
+.ox_calendar .fm_list strong {display:block; overflow:hidden; width:156px; height:25px; margin:0 10px; background:#FFF; line-height:25px;}
+.ox_calendar .fm_time {display:none; width:182px; padding-top:15px; background:#F9F9F9; text-align:center;}
+.ox_calendar .fm_time .date {padding:10px 0; border-top:1px solid #999;}
+.ox_calendar .fm_time .date em {font-weight:bold; font-family:Tahoma,Sans-serif; font-style:normal;}
+.ox_calendar .fm_time b {margin:0 4px;}
+.ox_calendar .fm_time .ok {overflow:visible; height:28px; margin-left:8px; padding:0 8px; border-radius:3px; background:#666; color:#FFF; font-family:'±¼¸²',Gulim; font-size:12px; line-height:28px;}
+.ox_calendar button.close {float:right; overflow:hidden; width:15px; height:15px; background:url(__magicdir__/ly_close.gif) no-repeat 2px 2px; text-indent:-999px;}
+.ox_calendar button.prev {float:left; overflow:hidden; width:22px; height:28px; background:url(__magicdir__/ly_prev.gif) no-repeat 5px 3px; text-indent:-999px;}
+.ox_calendar button.next {float:left; overflow:hidden; width:22px; height:28px; background:url(__magicdir__/ly_next.gif) no-repeat 7px 3px; text-indent:-999px;}
+.ox_calendar button.year, .ox_calendar button.month, .ox_calendar button.hour, .ox_calendar button.min {overflow:hidden; width:33px; height:26px; background:#FFF; font-family:Tahoma,Sans-serif; font-size:17px; line-height:26px;}
+.ox_calendar button.year {float:left; width:58px;}
+.ox_calendar button.month {float:left;}
+.ox_calendar span.year, .ox_calendar span.month, .ox_calendar span.hour, .ox_calendar span.min {display:inline-block; border:1px solid #999; vertical-align:middle;}
+.ox_calendar span.year, .ox_calendar span.month {float:left; margin:0 2px;}
+
+/* colorpicker */
+.ox_color {padding:12px 11px 12px 12px; border:2px solid #777; border-radius:5px; background:#F9F9F9;}
+.ox_color .swatch {width:208px;}
+.ox_color .swatch ul {width:208px; margin:0; padding:0; list-style:none;}
+.ox_color .swatch ul:after {display:block; clear:both; content:'';}
+.ox_color .swatch li {float:left; width:13px; height:13px; margin:0; padding:0;}
+.ox_color .swatch li button {float:left; overflow:hidden; width:12px; height:12px; margin:0; padding:0; border:0; font-size:0; line-height:0; text-indent:-999px;}
+.ox_color .btm {width:208px; padding-top:4px;}
+.ox_color .inp {width:70px; margin:0; font-family:Tahoma,Sans-serif; line-height:normal; vertical-align:middle;}
+.ox_color .ok, .ox_color .close {margin:0 0 0 4px; padding:0; font-size:12px; line-height:normal; vertical-align:middle;}
+
+/* marker */
+.ox_marker {padding:12px 11px 12px 12px; border:2px solid #777; border-radius:5px; background:#F9F9F9;}
+.ox_marker .tab {width:359px; border-bottom:1px solid #DDD;}
+.ox_marker .tab:after {display:block; clear:both; content:'';}
+.ox_marker .tab ul {float:left; position:relative; top:1px; margin:-1px 0 0; padding:0; border-top:1px solid #DDD; border-left:1px solid #DDD; list-style:none;}
+.ox_marker .tab li {float:left; margin:0; padding:0; border-right:1px solid #DDD; border-bottom:1px solid #DDD;}
+.ox_marker .tab li.on {border-bottom-color:#F3F3F3;}
+.ox_marker .tab li button {float:left; width:80px; height:20px; margin:0; padding:0; border:0; background:#FFF; font-size:12px; line-height:normal;}
+.ox_marker .tab li.on button {background:#F3F3F3; color:#36B; font-weight:bold; letter-spacing:-1px;}
+.ox_marker .swatch {padding:8px; border:1px solid #DDD; border-top:0; background:#F3F3F3;}
+.ox_marker .swatch div {border-top:1px solid #DDD; border-left:1px solid #DDD; background:#F3F3F3;}
+.ox_marker .swatch ul {width:340px; margin:0; padding:0; list-style:none;}
+.ox_marker .swatch ul:after {display:block; clear:both; content:'';}
+.ox_marker .swatch li {float:left; margin:0; padding:0; border-right:1px solid #DDD; border-bottom:1px solid #DDD;}
+.ox_marker .swatch li button {float:left; overflow:hidden; width:19px; height:19px; margin:0; padding:0; border:0; background:#FFF; font-size:12px; line-height:normal; text-align:center;}
+.ox_marker .close {overflow:hidden; position:absolute; top:8px; right:8px; width:11px; height:11px; margin:0; padding:0; border:0; background:url(__magicdir__/ly_close.gif) no-repeat 0 0; font-size:0; line-height:0; text-indent:-999px;}
