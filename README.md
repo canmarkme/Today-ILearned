@@ -47,7 +47,7 @@ The Learning Record
 
 </details>
 
-<details open>
+<details>
   <summary><b>2021년 09월</b></summary>
 
 #### 09월 01일
@@ -190,11 +190,30 @@ The Learning Record
 
 #### 09월 27일
 - [X] 자바스립트 정리 
-- [X] PS 문제 풀기
+- [X] PS 문제
 
 #### 09월 28일
 - [X] 자바스립트 정리 
-- [ ] 라이브 세션 19:30~21:00
+- [X] 라이브 세션 19:30~21:00
 
+#### 09월 29일
+- [X] 자바스립트 정리 
+- [X] PS 문제 풀이
 
+#### 09월 30일
+- [X] 자바스립트 정리 
+- [X] PS 문제 풀이
 </details>
+
+<details open>
+  <summary><b>2021년 10월</b></summary>
+
+#### 10월 01일
+
+- [x] 수학 강의 정리
+
+#### 10월 02일
+
+- [x] 수학 강의 정리
+- [x] 미션2. HTML/CSS 개인 과제 자료 수집
+
