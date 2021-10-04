@@ -1,0 +1,38 @@
+/* layout */
+
+
+/* content */
+
+
+.title_area h3 {
+  width: auto;
+  height: auto;
+  margin: 30px 0 20px;
+  padding: 0 0 0 28px;
+  background: url(./images/h3bg.png) no-repeat left 5px;
+  line-height: 1.4em;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+
+
+.tbl_normal {margin:5px 0; border:0; border-right:1px solid #CCC; border-bottom:1px solid #CCC;}
+.tbl_normal caption {display:none;}
+.tbl_normal th, .tbl_normal td {padding:5px; border:0; border-top:1px solid #CCC; border-left:1px solid #CCC; text-align:center;}
+.tbl_normal th {border-top-color:#888; background:#F6F6F6;}
+
+.lst_normal, .lst_normal ul {margin:0; padding:0; list-style:none;}
+.lst_normal ul {margin:4px 0;}
+.lst_normal li {margin:0; padding:0 0 0 26px; background:url(./images/bu_grey.gif) no-repeat 14px 4px;}
+.lst_normal li li {margin:0; padding:0 0 0 14px; background:url(./images/bu_dash.gif) no-repeat 0 4px;}
+.lst_normal em {font-style:normal; color:#E64;}
+
+.red {color:#E40;}
+.green {color:#2B2;}
+
+
+.intro {overflow:hidden; width:100%;}
+.intro .visual {float:right; padding-left:30px;}

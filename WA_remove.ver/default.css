@@ -1,35 +1,24 @@
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 /* common */
-body, th, td, input, textarea, button, select {font-family:'≥™¥Æ∞ÌµÒ','Nanum Gothic','∏º¿∫ ∞ÌµÒ','Malgun Gothic','±º∏≤',Gulim,AppleGothic,Sans-serif; font-size:13px;}
+body, th, td, input, textarea, button, select {font-family:'NanumS','Malgun Gothic','ÎßëÏùÄ Í≥†Îîï',Dotum,'ÎèãÏõÄ',Helvetica,AppleSDGothicNeo,sans-serif; font-size:1em;}
 body, p, form, h1, h2, h3, h4, h5, h6, img {margin:0; padding:0; border:0;}
-body, th, td, h1, h2, h3, h4, h5, h6 {font-size:13px; line-height:1.6;}
-textarea {line-height:1.5;}
+body, th, td, h1, h2, h3, h4, h5, h6 {line-height:1.6;}
 hr {display:none;}
 a {color:#333; text-decoration:none;}
-a:hover {color:#369; text-decoration:underline;}
-input[type="image"] {border-radius:0;}
+a:hover {color:#369;}
 
-.break {margin-top:20px;}
-.blind {visibility:hidden; overflow:hidden; position:absolute; width:1px; height:1px;}
-.hidden {display:none;}
-.p_l {text-align:left !important;}
-.p_r {text-align:right !important;}
-.p_c {text-align:center !important;}
-.p_j {text-align:justify !important;}
-.f_l {float:left !important;}
-.f_r {float:right !important;}
 .b, b, strong, h1, h2, h3, h4, h5, h6 {font-weight:600;} /* 400, 600, 700 */
-.i {font-style:italic;}
 
 /* layout */
-#wrap {min-width:1000px; background:url(../image/bg_header.gif) repeat-x 0 0; text-align:center;}
+
+#wrap{z-index:20;clear:both;width:100%; background:url(./images/bg_header.gif) repeat-x 0 0; text-align:center;}
+
+
 
 #header {position:relative; width:1000px; height:115px; margin:0 auto; text-align:left; z-index:300;}
 #header img {vertical-align:middle;}
 #header h1 {position:absolute; top:16px; left:15px;}
-#header .skip {overflow:hidden; position:absolute; top:-999px; left:-999px; width:1px; height:1px;}
-#header .skip:active, #header .skip:focus {top:10px; left:10px; width:auto; height:auto; padding:10px 20px; background:#FFB; text-decoration:none; white-space:nowrap;}
 
 #header .srch {position:absolute; top:20px; left:338px;}
 #header .srch fieldset {margin:0; padding:0; border:0;}
@@ -58,7 +47,83 @@ input[type="image"] {border-radius:0;}
 #footer p {float:left; width:550px;}
 #footer p em {font-style:normal; color:#06F;}
 #footer .go {float:right; margin:-42px 0 0; padding:0; list-style:none;}
-#footer .go li {margin:0; padding:2px 0;}
-#footer .go a {display:inline-block; width:120px; height:23px; border-radius:3px; background:#D6D6D6; font-weight:600; color:#333; text-align:center; line-height:23px; vertical-align:middle;}
+#footer .go li {margin:0; padding:0 1em 2px;}
+#footer .go a {display:inline-block; width:120px; height:2.308em; line-height: 2.308; border-radius:3px; background:#D6D6D6; font-weight:600; color:#333; text-align:center;}
 #footer .go a:hover {color:#333; text-decoration:none;}
 #footer img {vertical-align:middle;}
+
+.title_area h3 {
+  width: auto;
+  height: auto;
+  margin: 30px 0 20px;
+  padding: 0 0 0 28px;
+  background: url(./images/h3bg.png) no-repeat left 5px;
+  line-height: 1.4em;
+  color: #000;
+  font-weight: 600;
+}
+/* 
+.tbl_type {
+  border: 1px solid #999;
+  width: 760px;
+  margin-bottom: 10px;
+} */
+
+.tbl_type {
+  border-collapse:collapse;
+  border-spacing: 0;
+  width: 100%; 
+  margin:0 0 .5em 0; 
+  border-top:#4a4a4a solid 3px;
+}
+/* 
+.tbl_type thead, .tbl_type tfoot {
+  font-weight: normal;
+  color:#000; 
+} */
+
+.tbl_type th {
+  border: 1px solid #babcbe;
+  padding:16px 10px; 
+  background-color:transparent;
+  font-weight: 600;
+  text-align: center;
+  background-color:#fbfbfb;
+  color:#333333;
+  
+}
+
+.tbl_type td {
+  /* border: 1px solid #999; */
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #babcbe; 
+  padding:16px 10px; 
+  /* background-color:transparent; */
+  background-color:#fff;
+}
+
+/* .tbl_type tr:first-child th, .tbl_type tr:first-child td{border-top:none;} */
+.tbl_type th:first-child,.tbl_type td:first-child{border-left:none;}
+.tbl_type th:last-child, .tbl_type td:last-child{border-right:none;}
+
+
+caption {position:absolute;width:1px;height:1px;margin:0;padding:0;background:none; font-size:3px; color:transparent; line-height: 0;}
+
+/* 
+.tbl_type caption {
+  display: none
+} */
+
+.lst_common {
+  list-style: none;
+  text-indent: 0;
+  margin: 0;
+  padding: 10px
+}
+
+.lst_common li {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
