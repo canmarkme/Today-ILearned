@@ -228,4 +228,7 @@ style attribute로 대체
 ![lighthouse 분석 리포트](../images/lighthouse.png)
 
 
+## 6. 문법 검사 결과
+![](../images/html_valid.png)
+![](../images/css_valid.png)
 
