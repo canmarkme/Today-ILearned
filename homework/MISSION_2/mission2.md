@@ -6,13 +6,13 @@
 
   **① 요금 `<th>` 영역은 하나의 row지만 `<br>`과 &nbsp; 강제 spacing으로 두 행으로 보이게 만듦**
 
-  <img src="../images/wrong_th.png" width="450px">
+  <img src="../images/wrong_th.png" width="500px">
 
 
 
   **② 표 내용을 이해하기 어려움**
 
-  <img src="../images/wrong_table.png" width="450px">
+  <img src="../images/wrong_table.png" width="500px">
 
 
 접근성 높은 테이블을 제작하는데, 사용자의 이해를 돕기 위해 하나의 테이블을 두 개로 나눴고 테이블 제목에 이미지를 넣어 운용의 용이성을 향상시켰습니다. 그리고 접근성 인증 평가원 우수 사이트 인증 마크도 임의로 넣어보았습니다. ^,^
@@ -21,7 +21,7 @@
 
 해당 과제를 통해 윈도우 환경에서도 사회적 약자에게 제공되는 '접근성 키보드 설정' 기능을 알게되었는데, 제로 베이스 자바스크립트 동영상의 소스 코드가 너무 작아 담당자 분께 말씀드렸었는데, Windows의 돋보기 기능을 알고 난 후로 이 기능을 이용해서 강의를 청취하고 있습니다. (: 
 
-일상생활에서도 보도 블럭과 신호등 안내음성의 부재 등 지켜지지 않는 경우를 발견합니다. 그러나 우리 웹 프론트엔드 개발자들이 웹 표준을 준수하기 위해 노력하는 만큼 웹 접근성의 지침이 기본이 준수되는 세상이 오리라 믿습니다.
+아직도 일상 생활에서 점자 블럭과 신호등 안내 음성의 부재와 같이 사회적 약자에 대한 배려가 지켜지지 않는 경우가 발견됩니다. 우리 웹 프론트엔드 개발자들이 웹 표준을 준수하기 위해 노력하는 만큼 웹 접근성의 지침이 기본이 준수되는 세상이 오리라 믿습니다.
 
 
 
@@ -52,7 +52,7 @@
 
 ## 2. KWCAG 2.1 기반 웹 접근성 평가
 
-### 대체 텍스트
+### 1) 대체 텍스트
 🧩 **수정 전**
 ```javascript
 <img alt="" src="./images/btn_home.gif">
@@ -65,7 +65,7 @@
 ```
 이미지를 대체하는 텍스트 제공
 
-### 건너뛰기 링크
+### 2) 건너뛰기 링크
 🧩 **수정 전**
 ```javascript
 <a href="#content" class="skip">본문 바로가기</a>
@@ -80,7 +80,7 @@
 건너뛰기 링크 추가로 키보드 접근성 고양
 
 
-### 레이블 수정
+### 3) 레이블 수정
 🧩 **수정 전**
 ```javascript
 <input type="submit" value="검색" class="ok">
@@ -95,7 +95,7 @@
 `<label>` 추가
 
 
-### 명도 대비 
+### 4) 명도 대비 
 🧩 **수정 전**
 ```css
 #header .srch .kwd input {
@@ -111,7 +111,6 @@
 🧫 **수정 후**
 
 ```css
-
 #header .srch .kwd input {
   border: 2px solid #1100ff;
 }
@@ -125,7 +124,7 @@
 
 ## 3. HTML/CSS 유효성 검사
 
-### 표 콘텐츠
+### 1) 표 콘텐츠
 🧩 **수정 전**
 ```javascript
 <table class="tbl_type" cellspacing="1" cellpadding="0" summary="서울방면 시간 및 요금에 대한 내용입니다">
@@ -139,7 +138,7 @@
 ```
 
 
-### 인코딩
+### 2) 인코딩
 🧩 **수정 전**
 ```javascript
 <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
@@ -153,7 +152,7 @@
 ```
 
 
-### col attribute
+### 3) col attribute
 🧩 **수정 전**
 ```javascript
 <colgroup>
@@ -181,7 +180,7 @@ style attribute로 대체
 
 ## 4. Lighthouse 검사
 
-### Document does not have a meta description
+### 1) Document does not have a meta description
 🧩 **수정 전**
 ```javascript
 해당 코드 없음
@@ -200,7 +199,7 @@ style attribute로 대체
     <meta property="og:description" content="고성군, 고성여행, 교통/지도, 교통안내, 시외버스">
 ```
 
-### Links to cross-origin destinations are unsafe
+### 2) Links to cross-origin destinations are unsafe
 🧩 **수정 전**
 ```javascript
 <a href="https://www.gwgs.go.kr/tour/index.do" target="_blank" title="새창">고성관광</a>
@@ -212,7 +211,7 @@ style attribute로 대체
 <a href="https://www.gwgs.go.kr/tour/" target="_blank" rel="noopener noreferrer" title="새창">고성관광</a>
 ```
 
-### Background and foreground colors do not have a sufficient contrast ratio
+### 3) Background and foreground colors do not have a sufficient contrast ratio
 🧩 **수정 전**
 ```css
 #footer p em {font-style:normal; color:#06F;}
