@@ -5,12 +5,12 @@
 "표는 이해하기 쉽게 구성하는가?" 질문에 입각하여 접근성이 좋지 않은 웹 페이지를 [고성군 대중교통정보 대진시외버스터미널 시간표](https://www.goseong-pti.com/index.php?mp=p3_3_3) 로 선정했습니다. 
 
   ① 요금 `<th>` 영역은 하나의 row지만 `<br>`과 &nbsp; 강제 spacing으로 두 행으로 보이게 만듦
-  <img src="../images/wrong_th.png" width="500px">
+  <img src="../images/wrong_th.png" width="350px">
 
 
 
   ② 표 내용을 이해하기 어려움
-  <img src="../images/wrong_table.png" width="500px">
+  <img src="../images/wrong_table.png" width="350px">
 
 
 사용자의 이해를 돕기 위해 하나의 테이블을 두 개로 나눴고 테이블 제목에 이미지를 넣어 운용의 용이성을 향상시켰습니다. 
