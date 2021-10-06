@@ -10,3 +10,24 @@ s는 길이가 1 이상, 100이하인 스트링입니다.
 |---|---|
 |"abcde"|	"c"|
 |"qwer"|	"we"|
+
+## 🤞 Comment
+
+### 1) 문자열.substr()
+특정 구간 문자열을 추출합니다.
+
+```javascript
+string.substr(start, length)
+```
+
+- start: 탐색 구간의 시작점(index)
+- length: 탐색 구간이 끝나는 점(index) (Optional)
+
+✨ **예시**
+
+```javascript
+let str = "chongmoa.com";
+console.log(str.substr(3, 5));      // output: ngmoa
+console.log(str.substr(-2));        // output: om
+console.log(str.substr(-2, 2));     // output: om
+```
