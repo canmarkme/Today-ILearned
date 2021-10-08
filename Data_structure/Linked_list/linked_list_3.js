@@ -52,7 +52,8 @@ LinkedList.prototype.insert = function (value, position = 0) {
   } else {
     while (index++ < position) {  // ?
       console.log(`🥞 index: ${index}  position: ${position}`);
-      prev = current;   // 예를 들어, 두 번째 노드가 current라면 첫 번째 노드(prev)는 current를 가리키고 있다.
+      // 예를 들어, 두 번째 노드가 current라면 첫 번째 노드(prev)는 current를 가리키고 있다.
+      prev = current;
       current = current.next;
     }
 
