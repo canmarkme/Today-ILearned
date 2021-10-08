@@ -1,12 +1,12 @@
-# 연결리스트(Linked List)
-각 노드가 데이터와 포인터를 가지며, 여러 노드를 한 줄로 연결해 놓은 자료 구조
+# 연결 리스트(Linked List)
+각 노드가 데이터와 포인터를 가지며, 여러 노드를 **한 줄**로 연결해 놓은 자료 구조
 
 - 더 이상 가리킬 노드가 없을때 next에 null이 저장됩니다.
 - 헤드는 첫 번째 노드를 가리키는 포인터
 - Node = Data & Next
 
 ## 1. 연결리스트 구현
-![](./images/1.png)
+![](./Linked_list/images/1.png)
 
 ### 🧪 실행결과
 
@@ -21,7 +21,7 @@ LinkedList {
 ```
 
 ## 2. 연결리스트 구현
-![](./images/2.png)
+![](./Linked_list/images/2.png)
 
 ### 🧪 실행결과
 
@@ -36,7 +36,7 @@ LinkedList { head: null, length: 0 }
 
 
 ## 3. 연결리스트 구현
-![](./images/3.png)
+![](./Linked_list/images/3.png)
 
 ### 🧪 실행결과
 
@@ -57,18 +57,18 @@ LinkedList { head: null, length: 0 }
 
 ### 🍒 풀이
 
-![](./images/review3-1.png)
+![](./Linked_list/images/review3-1.png)
 
-![](./images/review3-2.png)
+![](./Linked_list/images/review3-2.png)
 
 
 ## 4. 연결리스트 구현
-![](./images/4.png)
+![](./Linked_list/images/4.png)
 
 
 ### 🍒 풀이
 
-![](./images/review4.png)
+![](./Linked_list/images/review4.png)
 
 
 ### 🧪 실행결과
@@ -94,12 +94,12 @@ null
 
 
 ## 5. 연결리스트 구현
-![](./images/5.png)
+![](./Linked_list/images/5.png)
 
 
 ### 🍒 풀이
 
-![](./images/review5.png)
+![](./Linked_list/images/review5.png)
 
 
 ### 🧪 실행결과
@@ -121,12 +121,12 @@ null
 
 
 ## 6. 연결리스트 구현
-![](./images/6.png)
+![](./Linked_list/images/6.png)
 
 
 ### 🍒 풀이
 
-![](./images/review6.png)
+![](./Linked_list/images/review6.png)
 
 
 ### 🧪 실행결과
