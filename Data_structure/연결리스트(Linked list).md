@@ -5,6 +5,9 @@
 - 헤드는 첫 번째 노드를 가리키는 포인터
 - Node = Data & Next
 
+![](./Linked_list/images/linked.png)
+
+
 ## 1. 연결리스트 구현
 ![](./Linked_list/images/1.png)
 
