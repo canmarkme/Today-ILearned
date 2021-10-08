@@ -51,18 +51,6 @@ LinkedList.prototype.append = function (value) {
 let ll = new LinkedList();
 console.log(ll);
 
-// append() 메서드 추가로 필요 없는 부분
-/*
-ll.head = new Node(123);
-ll.length++;
-console.log(ll);
-
-
-ll.head.next = new Node(456);
-ll.length++;
-console.log(ll);
-*/
-
 
 // + 추가
 ll.append(1);
