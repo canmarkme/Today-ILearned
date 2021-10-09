@@ -1,4 +1,4 @@
-# 우선순위 큐(Priority_queue)
+# 우선순위 큐(Priority queue)
 - 우선순위를 고려하여 먼저 넣은 데이터가 먼저 나오는 **FIFO(First In First Out)** 기반의 선형 자료구조
 - 우선 순위 정렬 방식 **① 배열 기반** ② 연결리스트 기반 ③ 힙 기반
 - Element = 우선순위 요소 + 데이터 요소
