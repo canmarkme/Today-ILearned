@@ -3,7 +3,7 @@
 
 - 마지막 노드는 head를 갖는 노드를 가리킵니다.
 
-![](./Circle_linked_list/images/Circle.png)
+![](./Circle_linked_list/images/circle.png)
 
 
 ## 1. 원형 연결 리스트 구현
