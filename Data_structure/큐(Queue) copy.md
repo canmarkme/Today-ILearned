@@ -6,7 +6,7 @@
 ![](./Queue/images/queue.png)
 
 
-## 1. 큐 구현
+## 1. 스택 구현
 ![](./Queue/images/1.png)
 
 ### 🧪 실행결과
@@ -39,7 +39,7 @@ false
 }
 ```
 
-## 2. 큐 구현
+## 2. 스택 구현
 ![](./Queue/images/2.png)
 
 
@@ -54,7 +54,7 @@ Queue { array: [ 3, 4 ] }
 ```
 
 
-## 3. 큐 구현
+## 3. 스택 구현
 ![](./Queue/images/3.png)
 
 ### 🧪 실행결과
@@ -66,41 +66,6 @@ Queue { array: [ 2, 3, 4 ] }
 3
 Queue { array: [] }
 0
-```
-
-
-## 4. 큐 최적화 구현
-![](./Queue/images/4.png)
-
-### 🧪 실행결과
-
-
-``` javascript
-Queue { array: [ 1, 2 ], tail: 2, head: 0 }
-Queue { array: [ 1, 2, 3, 4 ], tail: 4, head: 0 }
-🌭0
-🧃1
-1
-🌭1
-🧃2
-2
-Queue { array: [ <2 empty items>, 3, 4 ], tail: 4, head: 2 }    
-4
-```
-
-
-
-## 5. Benchmark
-![](./Queue/images/5.png)
-
-### 🧪 실행결과
-
-
-``` javascript
-enqueue queue_1: 6ms
-enqueue queue_2: 7ms
-dequeue queue_1: 5382ms
-enqueue queue_2: 13ms
 ```
 
 
