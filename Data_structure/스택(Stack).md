@@ -69,7 +69,3 @@ true
 false
 ```
 
-
-
-![](./Stack/images/review3-2.png)
-
