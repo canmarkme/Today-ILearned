@@ -70,6 +70,8 @@ Queue { array: [] }
 
 
 ## 4. 큐 최적화 구현
+
+- 방식 개선: enqueue / dequeue 방식을 push / shift에서 index로 변경 → shift()를 사용할 경우 O(n) 시간이 걸리기 때문에 index를 이용해 O(1)로 시간 단축합니다.
 ![](./Queue/images/4.png)
 
 ### 🧪 실행결과
