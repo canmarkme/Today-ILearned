@@ -24,7 +24,6 @@ HashTable.prototype.hashCode = function (key) {
 };
 
 
-// + 추가
 // put(): 데이터 추가
 HashTable.prototype.put = function (key, value) {
   let index = this.hashCode(key);
@@ -57,16 +56,47 @@ HashTable.prototype.remove = function (key) {
   return element;
 };
 
+// clear(): 초기화
+HashTable.prototype.clear = function () {
+  this.table = new Array(HASH_SIZE);
+  this.lenght = 0;
+};
+
+// size(): 크기 반환
+HashTable.prototype.size = function () {
+  return this.length;
+};
+
+// getBuffer(): 데이터 셋 반환
+HashTable.prototype.getBuffer = function () {
+  let array = [];
+
+  for (let i = 0; i < this.table.length; i++) {
+    if (this.table[i]) {
+      array.push(this.table[i]);
+    }
+  }
+
+  return array;
+};
+
+// print(): 데이터 셋 출력
+HashTable.prototype.print = function () {
+  for (let i = 0; i < this.table.length; i++) {
+    if (this.table[i]) {
+      console.log(i + " → " + this.table[i].key + ": " + this.table[i].value);
+    }
+  }
+};
+
 
 
 let ht = new HashTable();
 
 ht.put("Ana", 172);
+ht.put("Donnie", 183);  // collision
 ht.put("Sue", 163);
+ht.put("Jamie", 168);   // collision
 ht.put("Paul", 190);
-console.log(ht);
-console.log(ht.get("Paul"));
-console.log(ht.remove("Paul"));
-console.log(ht.get("Paul"));
-console.log(ht.remove("Paul"));
-console.log(ht);
+console.log(ht.size());
+ht.print();
