@@ -33,7 +33,7 @@ function answer(matter) {
   return newArray;
 }
 
-// 방법 2 set()
+// 방법 2 set(), from
 function answer(matter) {
   let newArray = [];
 
