@@ -12,7 +12,6 @@ function answer(height) {
   let str = "\n";
 
 
-
   for (let i = 0; i < height; i++) {
 
     // 1. 공백 처리 ''
@@ -22,7 +21,7 @@ function answer(height) {
     }
 
     // 2. "*" 은 2n+1
-    for (let j = 0; j < i * 2 + 1; j++) {
+    for (let j = 0; j < 2 * i + 1; j++) {
       str += "*";
     }
 
@@ -30,8 +29,5 @@ function answer(height) {
     str += "\n";
   }
 
-
   return str;
 }
-
-
