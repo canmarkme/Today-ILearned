@@ -17,7 +17,6 @@ while (input !== 1) {
 */
 
 // 방법 2) 방법 1보다 시간이 더 오래 걸렸는데 통과..
-// 먼저 소수를 찾습니다.
 let resultArr = [];
 let result = [];
 let answer = '';
