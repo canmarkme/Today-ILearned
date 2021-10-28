@@ -1,7 +1,15 @@
 const fs = require('fs');
 const filePath = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
-let input = fs.readFileSync(filePath).toString().split('\n');
+let X = fs.readFileSync(filePath).toString().trim();
+let counter = 0;
 
+while (X > 0) {
+  counter++;
+  X = X - counter;
+}
 
-// Write your code
-console.log();
+if (counter % 2 === 0) {
+  console.log(`${counter + X}/${1 + -X}`);
+} else {
+  console.log(`${1 + -X}/${counter + X}`);
+}
