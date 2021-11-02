@@ -9,6 +9,7 @@ for (let i = 0; i < T; i++) {
   const b = +input.shift();
   const residentsNo = [];       // 거주민의 수
 
+  // 🤞 Comment 표처럼 배열 생성 작업
   for (let i = 0; i <= a; i++) {
 
     // residentsNo의 첫 번째 열은 언제나 1입니다.
