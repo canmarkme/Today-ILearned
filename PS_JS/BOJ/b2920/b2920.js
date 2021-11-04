@@ -9,7 +9,6 @@ function ascendingFn() {
 
   if (input[0] != 1) isAscending = false;
 
-
   for (let i = 1; i < input.length - 1; i++) {
     if (input[i] - input[i + 1] != -1) {
       isAscending = false;
@@ -37,7 +36,6 @@ function descendingFn() {
   }
 
   return isDescending;
-
 }
 
 function solution() {

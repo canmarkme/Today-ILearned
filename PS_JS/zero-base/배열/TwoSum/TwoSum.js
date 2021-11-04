@@ -18,7 +18,8 @@ function answer(nums, target) {
   for (let i = 0; i < nums.length; i++) {
 
     // key 찾기
-    if (map[target - nums[i]] != undefined) {
+    // (target - nums[i]) == nums[j]
+    if (map[target - nums[i]] != null) {
       return [map[target - nums[i]], i];
     }
 
@@ -40,5 +41,5 @@ function answer(nums, target) {
     }
   }
   */
-  return [];
+  return map;
 }

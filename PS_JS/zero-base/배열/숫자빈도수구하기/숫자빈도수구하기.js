@@ -23,10 +23,11 @@ function answer(M, N) {
     num = i;
 
     // 2. N = %, /로 구합니다.
-    while (num != 0) {
+    while (num != 0) {    // 129라면 9, 2, 1
       result[num % 10]++;      // 숫자 해당 인덱스에 +1 합니다. 
       num /= 10;
       num = parseInt(num);    // 소수(decimal)를 정수로 만듭니다.
+
     }
   }
 

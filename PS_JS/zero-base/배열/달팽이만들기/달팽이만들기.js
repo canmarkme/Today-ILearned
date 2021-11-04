@@ -8,7 +8,6 @@ for (let i = 0; i < input.length; i++) {
 
 function answer(length) {
   let result = [];
-  let num = 0;
   let direction = 1;    // 방향전환, 짝수(②, ④, ⑥)를 만나면 양수가 됩니다.
   let r = 0;
   let c = -1;    // 1열이 4칸을 가려면 c는 -1로 초기화 합니다.
@@ -22,6 +21,9 @@ function answer(length) {
   //    1) length 길이만큼 시작해서 숫자를 채워줍니다.
   //    2) length - 1, 방향 전환, 2회
   //    3) length == 0, 프로그램 종료
+
+  let num = 0;  // 값 채우는 용도
+
   while (1) {
     for (let i = 0; i < length; i++) {
       c += direction;

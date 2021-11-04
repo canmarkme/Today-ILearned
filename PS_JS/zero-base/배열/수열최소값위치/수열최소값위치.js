@@ -11,7 +11,7 @@ for (let i = 0; i < input.length; i++) {
 }
 
 function answer(nums) {
-  let result = [];
+
   let min = Number.MAX_SAFE_INTEGER;     // 최솟값을 찾기 때문에 가장 큰 값으로 초기화 합니다.
 
   // 1. 최솟값 찾기
@@ -51,3 +51,18 @@ function answer(nums) {
 }
 
 
+
+// 수강생 방법
+function answer(nums) {
+  let result = [];
+  const min = Math.min(...nums);
+
+  nums.map((num, index) => {
+    if (num === min) {
+      return result.push(index);
+    }
+    console.log(result);
+  });
+
+  return result;
+}
