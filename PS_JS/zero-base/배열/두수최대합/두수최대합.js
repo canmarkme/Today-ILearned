@@ -11,20 +11,20 @@ for (let i = 0; i < input.length; i++) {
 }
 
 // 정민이 방법
-function answer(nums) {
-  let result = [];
+// function answer(nums) {
+//   let result = [];
 
-  // 1. 최댓값 2개 찾기
-  let sorting = nums.sort((x, y) => x - y);
-  result.push(sorting[sort.length - 1]);
-  result.push(sorting[sort.length - 2]);
+//   // 1. 최댓값 2개 찾기
+//   let sorting = nums.sort((x, y) => x - y);
+//   result.push(sorting[sort.length - 1]);
+//   result.push(sorting[sort.length - 2]);
 
-  return result;
-}
+//   return result;
+// }
 
 
 // 강사님 방법
-/*
+
 function answer(nums) {
   let result = [];
 
@@ -40,4 +40,4 @@ function answer(nums) {
 
   return result;
 }
-*/
+
