@@ -13,8 +13,9 @@ for (let i = 0; i < N; i++) {
     continue;
   }
 
+
   for (let j = 2; j < numbers[i]; j++) {
-    if (numbers[i] % i === 0) {
+    if (numbers[i] % j === 0) {
       continue;
     }
   }
