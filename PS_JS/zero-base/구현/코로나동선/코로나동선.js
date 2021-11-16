@@ -16,7 +16,7 @@ for (let i = 0; i < input.length; i++) {
 
 function solution(history, infected) {
   let answer = [];
-  let map = {};
+  //let map = {};
   
   const start = history.findIndex(value => value === infected);
   const end = history.findIndex(value => value === -(infected));
