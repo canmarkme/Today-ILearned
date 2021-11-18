@@ -1,5 +1,5 @@
-//let input = [4, 5, 6];
-let input = [4];
+let input = [4, 5, 6];
+//let input = [4];
 
 for (let i = 0; i < input.length; i++) {
   process.stdout.write(`#${i + 1} `);
@@ -51,5 +51,5 @@ function solution(n) {
     if (n <= 0) break;
   }
 
-  return result.join(',').split(',').filter(elementValue => elementValue).map(value => +value);
+  return result.flat();
 }
