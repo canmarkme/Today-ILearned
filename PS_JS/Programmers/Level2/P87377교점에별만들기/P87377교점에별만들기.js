@@ -6,11 +6,6 @@ let input = [
   [5, 8, 12]
 ];
 
-// for (let i = 0; i < input.length; i++) {
-//   process.stdout.write(`#${i + 1} `);
-//   //console.log(solution(input));
-// }
-
 console.log(solution(input));
 
 
