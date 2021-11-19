@@ -24,13 +24,10 @@ function solution(line) {
   let maxY = -INF;
 
   // 1. 문제 참고 사항 공식을 이용해 모든 정수 교차점과 좌표의 최대/최솟값을 구합니다.
-
   for (let i = 0; i < N - 1; i++) {
     for (let j = i + 1; j < N; j++) {
       const [a, b, e] = line[i];
       const [c, d, f] = line[j];
-      //console.log(`line[i] ${line[i]}`);
-      //console.log(`line[j] ${line[j]}`);
 
       const mod = a * d - b * c;
       if (!mod) continue; // 분모가 0인 경우 제외
@@ -56,14 +53,9 @@ function solution(line) {
     }
   }
 
-
-  // 2. 너비와 높이를 계산 후, 별을 찍습니다.
-  // y의 높이 만큼, x의 길이를 '.'으로 채워진 2차 배열 paper를 만듭니다.
+  // 2. x,y 좌표에 별을 찍어줍니다.
   const paper = [...Array(maxY - minY + 1)].map(() => [...Array(maxX - minX + 1)].fill('.'));
-  //console.log(paper);
-  // 왜 최대y와 최소x에서 y와 x를 빼는가...
 
-  // [ [ -0, 4 ], [ -4, -4 ], [ 4, -4 ], [ 4, 1 ], [ -4, 1 ] ]
   crossPoints.forEach(([x, y]) => {
     paper[maxY - y][x - minX] = '*';
 
