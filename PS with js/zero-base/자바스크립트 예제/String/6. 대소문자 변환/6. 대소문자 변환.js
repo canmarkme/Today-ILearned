@@ -1,14 +1,5 @@
-function upperToLower(match) {
-  return match.toLowerCase();
-}
-
-function lowerToUpper(match) {
-  return match.toUpperCase();
-}
-http://egloos.zum.com/sweeper/v/3064730
 function toggleCase(string) {
-  const str = string.replace(/.*?/g, 'U$1E');
-  console.log(str);
+  return string.replace(/./g, char => (char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()));
 }
 
 const input = ['StuDY'];

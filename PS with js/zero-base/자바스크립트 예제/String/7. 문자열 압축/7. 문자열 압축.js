@@ -1,14 +1,5 @@
-function upperToLower(match) {
-  return match.toLowerCase();
-}
-
-function lowerToUpper(match) {
-  return match.toUpperCase();
-}
-http://egloos.zum.com/sweeper/v/3064730
 function compress(string) {
-  const str = string.replace(/.*?/g, 'U$1E');
-  console.log(str);
+  return string.replace(/(.)\1+/g, match => match[0] + match.length);
 }
 
 const input = ['ABBCCCE'];
