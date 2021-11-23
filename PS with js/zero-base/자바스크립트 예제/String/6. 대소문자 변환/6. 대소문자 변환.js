@@ -1,6 +1,13 @@
+/*
 function toggleCase(string) {
   return string.replace(/./g, char => (char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()));
 }
+*/
+
+const toggleCase = str =>
+  str.replace(/([a-z]+)|([A-Z]+)/g, (_, lowerCase, upperCase) =>
+    lowerCase ? lowerCase.toUpperCase() : upperCase.toLowerCase()
+  );
 
 const input = ['StuDY'];
 
