@@ -20,10 +20,7 @@ function solution(msg) {
         dict.push(w + c);
         break;
       }
-
-      console.log(w); // K인데 A랑 합하면 KA라서 못들어가..
       w += c;
-      console.log(w); // 둘이 합쳐 AB
     }
 
     // w 색인 번호를 출력합니다.
