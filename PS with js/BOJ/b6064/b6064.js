@@ -12,7 +12,6 @@ for (const datas of input) {
   const x = data[2];
   const y = data[3];
 
-  const max = M * N;
   let k = -1; // k번째 해를 구하시오!
   let index = 0;
 
@@ -22,7 +21,7 @@ for (const datas of input) {
       break;
     }
 
-    if (M * index + x > max) break;
+    if (M * index + x > M * N) break;
     index++;
   }
   console.log(k);
