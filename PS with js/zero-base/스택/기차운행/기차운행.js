@@ -5,8 +5,6 @@ function answer(train) {
   for (let i = 0; i < train.length; i++) {
     // stack이 비었거나 stack 마지막 index 값이 train[i] 보다 작을 때
     while (stack.length === 0 || stack[stack.length - 1] < train[i]) {
-      console.log('😂');
-      console.log('🤩');
       stack.push(++num);
     }
 
