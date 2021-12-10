@@ -7,7 +7,7 @@ for (let i = 0; i < input.length; i++) {
   console.log(answer(input[i]));
 }
 
-function answer(matter) {
+function answer(cmds) {
   let result = [];
   return result;
 }
